@@ -3,4 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images:{
+    domains:[
+      'openweathermap.org','images.unsplash.com'
+    ]
+  }
+}
