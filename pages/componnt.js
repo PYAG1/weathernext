@@ -7,7 +7,7 @@ export default function Weather({data}) {
     }
     else if(data.weather[0].main === 'Clear')*/
 
-    const swich= data.weather[0].main=== 'Clouds'? "white" : 'blue';
+
     
 
   return (
