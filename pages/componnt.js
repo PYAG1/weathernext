@@ -1,14 +1,11 @@
-import React from 'react'
+
 import Image from 'next/image'
 
 export default function Weather({data}) {
-   /* if(data.weather[0].main === 'Clouds'){
-
-    }
-    else if(data.weather[0].main === 'Clear')*/
 
 
-    
+
+    //main
 
   return (
     <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[90vh] m-auto p-4 text-gray-300 z-10 pb-12" >
@@ -21,9 +18,6 @@ export default function Weather({data}) {
                 height='100'
                  alt="/"/>
                 <p className="text-2xl">{data.weather[0].main}</p>
-                            
-
-
             </div>
             <p className="text-7xl">{data.main.temp.toFixed(0)-273}&#176;</p>
 
@@ -31,7 +25,7 @@ export default function Weather({data}) {
         </div>
 
         <div className=' bg-black/75 relative p-8 rounded-md'>
-            <p className="text-2xl text-center pb-6">Weather in {data.name}</p>
+            <p className="text-2xl text-center pb-6"> Weather in {data.name}</p>
             <div className='flex justify-between text-center items-center'>
                 <div >
                     <p className=" font-bold text-2xl">{data.main.feels_like.toFixed(0)-273}&#176;</p>
